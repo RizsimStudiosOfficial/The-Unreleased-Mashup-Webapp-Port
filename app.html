@@ -5,6 +5,7 @@
     <script src='js/libs/analytics.js'></script>
     <meta charset='utf-8'>
     <title>Incredibox</title>
+    <link rel="icon" href="favicon.ico" type="ico">
     <meta name='author' content='So Far So Good'>
     <meta name='copyright' content='http://www.sofarsogood.fr'>
     <meta name='format-detection' content='telephone=no'>
@@ -82,7 +83,7 @@
                     </div>
                     <div id='game-touch'>
                         <div id='box-stage'>
-                            <div id='stage-overflow'><canvas id='cnvGame' width='1524' height='400'></canvas></div>
+                            <div id='stage-overflow'><canvas id='cnvGame' width='1024' height='400'></canvas></div>
                             <div id='box-polo'></div>
                         </div>
                         <div id='box-video'></div>
@@ -350,10 +351,13 @@
                         <div class='scale'>
                             <div class='box'>
                                 <div class='box-tab'>
-                                    <div class='tab' id='tab-mod'>Mod Credit</div>
+                                    <div class='tab' id='tab-mod'>Mod Credits</div>
+                                    <div class='tab' id='tab-tuto'>Help</div>
+                                    <div class='tab' id='tab-credit'>Credits</div>
+                                    <div class='tab' id='tab-follow'>Follow</div>
                                 </div>
-                                <div class='pop' id='pop-mod'><img src='img/popup-album.png' width='600' height='275' class='center'>
-                                    <div class='textcenter' id='mod'><b>something</b><br> </div>
+                                <div class='pop' id='pop-mod'><img src='img/credits-image.png' width='600' height='325' class='center'>
+                                    <div class='textcenter' id='mod'><b>Cosmic</b> <br>Made the sprites and splashes and stuff<br> <br> <b> Rizsim Studios</b> <br> Did coding and stuff for this demo</div>
                                 </div>
                                 <div class='pop' id='pop-tuto'>
                                     <div class='container'>
@@ -365,7 +369,26 @@
                                                             <div class='txt'></div>
                                                         </div>
                                                     </div>
-                                                    
+                                                    <div class='img tuto2'><img src='img/info-didac2.png' width='525px' height='280px'>
+                                                        <div class='txt-box'>
+                                                            <div class='txt'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='img tuto3'><img src='img/info-didac3.png' width='525px' height='280px'>
+                                                        <div class='txt-box'>
+                                                            <div class='txt'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='img tuto4'><img src='img/info-didac4.png' width='525px' height='280px'>
+                                                        <div class='txt-box'>
+                                                            <div class='txt'></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='img tuto5'><img src='img/info-didac5.png' width='525px' height='280px'>
+                                                        <div class='txt-box'>
+                                                            <div class='txt'></div>
+                                                        </div>
+                                                    </div>
                                                     <div class='clear'></div>
                                                 </div>
                                             </div>
@@ -477,11 +500,15 @@
                                 <div class='pop' id='pop-setting'>
                                     <div class='container'>
                                         <div class='paramline' id='param-dark'><span class='label'>Dark mode</span>
-                                            <div class='bt-mini bt-onoff hoverLocked'>
+                                            <div class='bt-mini bt-onoff'>
                                                 <div class='slider'></div>
-                                                <div class='ic-locked'><svg class='icn-svg'>
-                                                        <use xlink:href='#ic-lock'></use>
-                                                    </svg></div>
+                                                <div class='hitzone'></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class='paramline' id='param-hdef'><span class='label'>HD mode</span>
+                                            <div class='bt-mini bt-onoff'>
+                                                <div class='slider'></div>
                                                 <div class='hitzone'></div>
                                             </div>
                                         </div>
@@ -583,8 +610,7 @@
         <script src='js/main.min.js'></script><svg aria-hidden='true' style='position: absolute; width: 0; height: 0; overflow: hidden;' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
             <defs>
                 <symbol id='ic-schools' viewBox='0 0 32 32'>
-                    
-                    
+                    <path d='M26.133 18.827c0.183-0.249 0.294-0.563 0.294-0.901 0-0.009-0-0.019-0-0.028l0 0.001c0.001-0.021 0.002-0.046 0.002-0.070 0-0.414-0.186-0.784-0.48-1.032l-0.002-0.002v-2.613c0-0.218-0.177-0.395-0.395-0.395v0h-8.192c-0.394 0.142-0.848 0.224-1.322 0.224-0.013 0-0.027-0-0.040-0h0.002c-1.237 0-2.24-0.469-2.24-1.067s1.003-1.067 2.24-1.067c0.009-0 0.019-0 0.030-0 0.476 0 0.934 0.080 1.36 0.228l-0.029-0.009h8.16c0.005 0.001 0.011 0.002 0.017 0.002 0.050 0 0.091-0.041 0.091-0.091 0-0.041-0.027-0.075-0.064-0.087l-0.001-0-9.168-4.267c-0.116-0.056-0.251-0.088-0.395-0.088s-0.279 0.032-0.4 0.090l0.006-0.002-10.757 5.045c-0.106 0.044-0.179 0.147-0.179 0.267s0.073 0.223 0.177 0.266l0.002 0.001 10.757 5.045c0.116 0.056 0.251 0.088 0.395 0.088s0.279-0.032 0.4-0.090l-0.006 0.002 8.891-4.171v2.667c-0.327 0.239-0.537 0.622-0.537 1.054 0 0.037 0.002 0.073 0.004 0.108l-0-0.005c-0 0.012-0.001 0.025-0.001 0.039 0 0.343 0.119 0.659 0.317 0.908l-0.002-0.003c-0.37 0.491-0.597 1.109-0.608 1.779l-0 0.003c-0.001 0.016-0.002 0.035-0.002 0.053 0 0.391 0.316 0.707 0.706 0.709h0.902c0.388-0.002 0.701-0.316 0.701-0.704 0-0.021-0.001-0.041-0.003-0.061l0 0.003c0-0.003 0-0.007 0-0.010 0-0.689-0.237-1.324-0.634-1.825l0.005 0.006z'></path>
                     <path d='M15.728 20.549l-5.973-2.805v4.656c1.717 1.308 3.886 2.106 6.239 2.133l0.006 0c2.36-0.028 4.528-0.825 6.271-2.152l-0.026 0.019v-4.656l-5.973 2.805c-0.080 0.038-0.173 0.060-0.272 0.060s-0.192-0.022-0.276-0.062l0.004 0.002z'></path>
                 </symbol>
                 <symbol id='ic-signout' viewBox='0 0 32 32'>
